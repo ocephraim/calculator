@@ -1,0 +1,23 @@
+.container {
+    position:absolute;
+    top:50%;
+    margin-top:-250px;
+}
+
+.buttons > div input {
+    color: black;
+    background-color: white;
+    border-style: none;
+    border: 1px solid brown;
+    padding: 15px;
+}
+.buttons > div input:hover {
+    background-color: brown;
+    color:white;
+}
+.buttons > div input:focus {
+    outline-style: none;
+}
+.display input {
+    padding: 15px;
+}

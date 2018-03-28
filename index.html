@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container calculator">
+        <div class="row display col-md-6 offset-md-3">
+            <input type="text" name="display" id="display" disabled class="form-control">
+        </div><!--display-->
+
+        <div class="buttons">
+            <div class="row row1 col-md-6 offset-md-3">
+                <input class="col-3" type="button" name="one" value="1" onclick="display.value +='1'">
+                <input class="col-3" type="button" name="two" value="2" onclick="display.value +='2'">
+                <input class="col-3" type="button" name="three" value="3" onclick="display.value +='3'">
+                <input class="col-3" type="button" name="plus" value="+" onclick="display.value +='+'">
+            </div><!--row1-->
+
+            <div class="row row2 col-md-6 offset-md-3">
+                <input class="col-3" type="button" name="four" value="4" onclick="display.value +='4'">
+                <input class="col-3" type="button" name="five" value="5" onclick="display.value +='5'">
+                <input class="col-3" type="button" name="six" value="6" onclick="display.value +='6'">
+                <input class="col-3" type="button" name="minus" value="-" onclick="display.value +='-'">
+            </div><!--row2-->
+
+            <div class="row row3 col-md-6 offset-md-3">
+                <input class="col-3" type="button" name="seven" value="7" onclick="display.value +='7'">
+                <input class="col-3" type="button" name="eight" value="8" onclick="display.value +='8'">
+                <input class="col-3" type="button" name="nine" value="9" onclick="display.value +='9'">
+                <input class="col-3" type="button" name="multiply" value="x" onclick="display.value +='*'">
+            </div><!--row3-->
+
+            <div class="row row4 col-md-6 offset-md-3">
+                <input class="col-3" type="button" name="clear" value="C" onclick="display.value =''">
+                <input class="col-3" type="button" name="zero" value="0" onclick="display.value +='0'">
+                <input class="col-3" type="button" name="equals" value="=" onclick="display.value = eval(display.value)">
+                <input class="col-3" type="button" name="divide" value="/" onclick="display.value +='/'">
+            </div><!--row4-->
+        </div><!--buttons-->
+    </div><!--calculator-->
+</body>
+</html>
